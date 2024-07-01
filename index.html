@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/25e42c5436.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+       
+      <!------- navigation ------>
+       <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      </div>
+    </div>
+
+     <!------- header ------>
+    <div class="container">
+  <div id="header">
+    <div class="header-text">
+      <h1>Hi, I'm <span>Anna</span></h1>
+      <p>Software Developer</p>
+    </div>
+    <img src="images/me.png" class="img-header" alt="image of me" />
+    </div>
+
+    <!------- about me -------->
+
+    <div id="about">
+        <div class="container">
+      <div class="row">
+
+        <div class="about-col">
+          <h1 class="sub-title">About me</h1>
+          <p>As a junior programmer, I am fascinated by the world of coding and the captivating combination of creativity and technology that unlocks endless imaginative possibilities. <br>
+            <br>
+            Above all, my motivation lies in 'Compassionate Coding’. Beyond the lines of code, I'm deeply committed to using my coding skills to unite innovation and compassion in the pursuit of a better world.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Web Development</span><br />Front end
+              </li>
+              <li>
+                <span>Online Marketing</span><br />Digital and E-Mail Marketing
+              </li>
+              <li>
+                <span>Fundraising</span><br />Direct Mail Fundraising
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Direct Response Coordinator</span><br />PETA Deutschland e.V.</li>
+              <li><span>E-Marketing Specialist</span><br />AVON Cosmetics GmbH</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Web Development Bootcamp</span><br />neuefische GmbH, Germany</li>
+              <li><span>International Business Studies</span><br />Universidad de Guadalajara, Mexico</li>
+              <li><span>Stenden University of Applied Science</span><br />Emmen, Netherlands</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </body>
+
+    <!------- portfolio -------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="portfolio-list">
+          <div class="portfolio">
+            <img src="images/project-1.png"/>
+            <div class="layer">
+              <h3>CalcuMaster</h3>
+              <p>Simple but efficient calculator</p>
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio">
+            <img src="images/project-2.png"/>
+            <div class="layer">
+              <h3>Space game</h3>
+              <p>Galaticly</p>
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio">
+            <img src="images/project-3.png"/>
+            <div class="layer">
+              <h3>Task Tracker</h3>
+              <p>To Do List</p>
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio">
+            <img src="images/project-1.png"/>
+            <div class="layer">
+              <h3>Task Tracker</h3>
+              <p>To Do List</p>
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+       <!------- teck stack -------->
+
+       <div id="tech-stack">
+        <div class="container">
+          <h1 class="sub-title">My Tech Stack</h1>
+          <div class="tech-stack-list">
+            <div>
+              <h2>Frontend</h2>
+              <p>JavaScript <i class="fa-brands fa-js"></i>
+                CSS <i class="fa-brands fa-css3-alt"></i>
+                 HTML <i class="fa-brands fa-html5"></i>
+                 </p>
+                 <p>React <i class="fa-brands fa-react"></i>
+                   Next.js
+                   <i class="fa-brands fa-html5"></i>
+                   </p>  
+            </div>
+            <div>
+              <h2>Backend</h2>
+              <p>Node.js <i class="fa-brands fa-node"></i></p>
+            </div>
+            <div>
+              <h2>Database</h2>
+              <p>MongoDB Atlas</p>
+            </div>
+            <div>
+              <h2>Version Control</h2>
+              <p>Git, GitHub <i class="fa-brands fa-github"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <!------- contact -------->
+
+     <div id="contact">
+      <div class="container">
+
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p> <i class="fa-solid fa-envelope"></i></i></i> anna_dick@outlook.de</p>
+            <p><i class="fa-solid fa-phone"></i> +49 157 73 799 741</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/anna-dick/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/AnnaD91"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/CV Anna Dick.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your e-mail" required>
+            <textarea name="message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg">
+
+          </span>
+          <button id="backToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>Copyright © Anna <br><i class="fa-solid fa-heart"></i> Compassionate Coding</p>
+      </div>
+     </div>
+  </body>
+</html>
